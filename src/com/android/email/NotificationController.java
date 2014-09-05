@@ -166,7 +166,6 @@ public class NotificationController {
                 .setTicker(ticker)
                 .setOngoing(ongoing);
 
-        Account account = Account.restoreAccountWithId(mContext, accountId);
         setHeadsUp(builder, account);
 
         if (enableAudio) {
